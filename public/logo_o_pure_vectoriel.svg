@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="204" height="204" viewBox="0 0 204 204">
+  <title>Logo O-Pure</title>
+  <desc>Logo vectoriel éditable O-Pure avec goutte, vague et slogan.</desc>
+  <defs>
+    <linearGradient id="leafBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#43B9D0"/>
+      <stop offset="1" stop-color="#159BBE"/>
+    </linearGradient>
+    <linearGradient id="leafTeal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#32B7B0"/>
+      <stop offset="1" stop-color="#279B91"/>
+    </linearGradient>
+    <linearGradient id="leafGreen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#A0CD45"/>
+      <stop offset="1" stop-color="#75B943"/>
+    </linearGradient>
+    <linearGradient id="wordO" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#063D5E"/>
+      <stop offset="1" stop-color="#087EA0"/>
+    </linearGradient>
+    <linearGradient id="wordPure" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#087FA8"/>
+      <stop offset="0.58" stop-color="#12AFC4"/>
+      <stop offset="1" stop-color="#45C7A4"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0A9EC5"/>
+      <stop offset="0.7" stop-color="#10BFC8"/>
+      <stop offset="1" stop-color="#36D3C2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Symbole goutte / feuille : chaque forme reste éditable -->
+  <g id="symbole-goutte">
+    <path d="M101 8
+             C94 23 82 35 72 48
+             C63 60 62 72 69 82
+             C75 91 85 96 94 96
+             C107 96 119 88 125 77
+             C132 64 126 53 119 41
+             C112 29 106 18 101 8 Z"
+          fill="url(#leafBlue)"/>
+    <path d="M101 17
+             C99 33 90 45 82 57
+             C75 67 74 78 82 87
+             C86 91 90 93 95 94
+             C87 82 88 72 95 60
+             C104 45 109 32 101 17 Z"
+          fill="#F5FAFA"/>
+    <path d="M103 20
+             C109 33 116 43 118 52
+             C120 62 115 70 106 77
+             C99 82 91 86 88 94
+             C101 91 113 84 121 74
+             C129 64 125 53 119 42
+             C113 32 107 24 103 20 Z"
+          fill="url(#leafTeal)"/>
+    <path d="M122 49
+             C126 59 130 67 126 77
+             C122 87 113 92 101 94
+             C105 84 113 78 119 69
+             C123 63 123 56 122 49 Z"
+          fill="url(#leafGreen)"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g id="nom">
+    <text x="12" y="145" font-family="Montserrat, Arial, sans-serif" font-size="54"
+          font-weight="500" letter-spacing="-3.8" fill="url(#wordO)">O</text>
+    <text x="57" y="145" font-family="Montserrat, Arial, sans-serif" font-size="48"
+          font-weight="700" letter-spacing="-2" fill="#0B3D5D">-</text>
+    <text x="72" y="145" font-family="Montserrat, Arial, sans-serif" font-size="49"
+          font-weight="700" letter-spacing="-2.9" fill="url(#wordPure)">Pure</text>
+  </g>
+
+  <!-- Vague dans le O et petites bulles -->
+  <g id="vague">
+    <path d="M12 127
+             C21 119 29 124 36 130
+             C42 135 47 136 53 132
+             C48 141 40 144 32 140
+             C25 136 19 128 12 127 Z"
+          fill="url(#wave)"/>
+    <path d="M15 128 C23 123 29 128 35 132 C41 136 46 136 50 134"
+          fill="none" stroke="#8DE7E7" stroke-width="1.8" stroke-linecap="round"/>
+    <circle cx="9" cy="122" r="2.3" fill="#19B6D2"/>
+    <circle cx="7" cy="128" r="1.4" fill="#19B6D2"/>
+  </g>
+
+  <!-- Slogan éditable -->
+  <text x="102" y="177" text-anchor="middle"
+        font-family="Montserrat, Arial, sans-serif" font-size="11.4"
+        font-weight="400" letter-spacing="-0.25" fill="#22B8B7">
+    Mieux traiter. Mieux protéger.
+  </text>
+</svg>
