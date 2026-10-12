@@ -1,0 +1,18 @@
+{
+    "name": "Transparence O-Pure",
+    "short_name": "O-Pure",
+    "description": "Un regard local sur les PFAS dans l'eau de votre quotidien.",
+    "lang": "fr-FR",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#f1f7fa",
+    "theme_color": "#f1f7fa",
+    "icons": [
+        {
+            "src": "/icon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
+        }
+    ]
+}
