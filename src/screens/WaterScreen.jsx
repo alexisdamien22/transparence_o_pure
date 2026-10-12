@@ -11,10 +11,35 @@ const indicatorIcons = {
   exceedance: CircleAlert,
 }
 
+const gaugeCenter = { x: 115, y: 112 }
+const gaugeRadius = 94
+const gaugeSegments = [
+  { id: 'green', start: 182, end: 222 },
+  { id: 'yellow', start: 228, end: 268 },
+  { id: 'orange', start: 272, end: 312 },
+  { id: 'red', start: 318, end: 358 },
+]
+const gaugeAngles = { good: 202, quantified: 248, watch: 292, exceedance: 338 }
+
+function gaugePoint(angle) {
+  const radians = angle * Math.PI / 180
+  return {
+    x: gaugeCenter.x + gaugeRadius * Math.cos(radians),
+    y: gaugeCenter.y + gaugeRadius * Math.sin(radians),
+  }
+}
+
+function gaugeArc(start, end) {
+  const from = gaugePoint(start)
+  const to = gaugePoint(end)
+  return `M ${from.x} ${from.y} A ${gaugeRadius} ${gaugeRadius} 0 0 1 ${to.x} ${to.y}`
+}
+
 function WaterScreen({ area, onEdit, onOpenTreatment, onAbout }) {
   const status = indicators.find((item) => item.id === area.status) ?? indicators[0]
   const isDanger = area.status === 'exceedance'
   const StateIcon = indicatorIcons[status.id]
+  const marker = gaugePoint(gaugeAngles[status.id] ?? gaugeAngles.good)
 
   return (
     <div className="screen-content water-screen">
@@ -30,11 +55,8 @@ function WaterScreen({ area, onEdit, onOpenTreatment, onAbout }) {
             <div className="gauge-column">
               <div className="gauge-visual">
                 <svg viewBox="0 0 230 140" role="img" aria-label={`Niveau illustratif : ${status.label}`}>
-                  <path className="arc arc-green" d="M 22 112 A 94 94 0 0 1 48 42" />
-                  <path className="arc arc-yellow" d="M 56 34 A 94 94 0 0 1 105 18" />
-                  <path className="arc arc-orange" d="M 115 18 A 94 94 0 0 1 164 34" />
-                  <path className="arc arc-red" d="M 172 42 A 94 94 0 0 1 198 112" />
-                  <circle className="gauge-marker" cx={area.status === 'good' ? 34 : area.status === 'quantified' ? 65 : area.status === 'watch' ? 163 : 187} cy={area.status === 'good' ? 87 : area.status === 'quantified' ? 36 : area.status === 'watch' ? 36 : 85} r="5" />
+                  {gaugeSegments.map(({ id, start, end }) => <path key={id} className={`arc arc-${id}`} d={gaugeArc(start, end)} />)}
+                  <circle className="gauge-marker" cx={marker.x} cy={marker.y} r="5" />
                 </svg>
                 <span className="gauge-center"><StateIcon size={22} /></span>
                 <span className="gauge-caption">Niveau illustré · sans valeur mesurée</span>
