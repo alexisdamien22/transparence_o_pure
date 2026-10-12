@@ -3,9 +3,9 @@ import { ArrowRight, CircleHelp, Droplet, House, Microscope, Split, X } from 'lu
 export function AppHeader({ screen, onAbout, onNavigate }) {
   return (
     <header className="op-header">
-      <a className="op-brand" href="#accueil" onClick={(event) => { event.preventDefault(); onNavigate('home') }} aria-label="Transparence O-Pure, accueil">
-        <span className="op-brand-mark"><Droplet size={19} /></span>
-        <span><strong>Transparence O-Pure</strong><small>ORLÉANS MÉTROPOLE</small></span>
+      <a className="op-brand" href="#accueil" onClick={(event) => { event.preventDefault(); onNavigate('home') }} aria-label="O-Pure, Orléans Métropole, accueil">
+        <span className="op-brand-mark"><img src="/logo_o_pure_vectoriel.svg" alt="" /></span>
+        <span><small>ORLÉANS MÉTROPOLE</small></span>
       </a>
       <nav className="desktop-nav" aria-label="Navigation principale">
         <NavButton active={screen === 'home'} icon={House} label="Accueil" onClick={() => onNavigate('home')} />
