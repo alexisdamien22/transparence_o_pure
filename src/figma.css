@@ -195,6 +195,69 @@ button:disabled { cursor: not-allowed; opacity: .5; }
   .loire-illustration { max-height: 320px; }
 }
 
+@media (min-width: 901px) {
+  .op-brand small { font-size: 10px; }
+  .nav-item, .about-button { font-size: 12px; }
+  .op-footer { font-size: 10px; }
+  .op-footer strong { font-size: 11px; }
+  .op-eyebrow { font-size: 11px; }
+  .home-copy h1 { font-size: 44px; }
+  .screen-heading h1 { font-size: 31px; }
+  .home-lede { font-size: 15px; }
+  .learn-banner strong { font-size: 12px; }
+  .learn-banner small { font-size: 11px; }
+  .location-title h2 { font-size: 17px; }
+  .location-intro { font-size: 12px; }
+  .address-form > label { font-size: 11px; }
+  .address-input input { font-size: 12px; }
+  .address-suggestions strong { font-size: 12px; }
+  .address-suggestions small { font-size: 10px; }
+  .address-suggestions p { font-size: 12px; }
+  .primary-button { min-height: 40px; font-size: 12px; }
+  .or-divider { height: 24px; font-size: 10px; }
+  .geolocate-button { height: 40px; font-size: 11px; }
+  .location-privacy { font-size: 10px; }
+  .form-notice { font-size: 11px; }
+  .demo-badge, .project-badge { min-height: 29px; font-size: 10px; }
+  .demo-disclosure > p { font-size: 10px; }
+  .area-line { font-size: 12px; }
+  .area-line button { font-size: 11px; }
+  .card-kicker { font-size: 10px; }
+  .indicator-grid { grid-template-columns: minmax(0, 1fr) 232px; gap: 24px; }
+  .gauge-caption { font-size: 10px; }
+  .gauge-column h2 { font-size: 20px; }
+  .indicator-legend h3 { font-size: 12px; }
+  .indicator-row { min-height: 32px; padding: 5px 8px; font-size: 10px; }
+  .indicator-row > small { font-size: 8px; }
+  .indicator-description { font-size: 12px; }
+  .indicator-footnote { font-size: 10px; }
+  .info-card-heading h2 { font-size: 14px; }
+  .info-card p { font-size: 11px; }
+  .info-card > strong { font-size: 10px; }
+  .treatment-link { min-height: 56px; }
+  .treatment-link strong { font-size: 11px; }
+  .treatment-link small { font-size: 10px; }
+  .analysis-note { font-size: 10px; }
+  .callout-heading h2 { font-size: 12px; }
+  .alert-callout p { font-size: 10px; }
+  .alert-callout .primary-button { min-height: 38px; font-size: 10px; }
+  .treatment-heading > div > p:last-child { font-size: 12px; }
+  .process-card { min-height: 142px; padding: 17px 16px 14px; }
+  .process-number { font-size: 10px; }
+  .process-card h2 { font-size: 14px; }
+  .process-card p { font-size: 10px; }
+  .outcome-card { min-height: 132px; padding: 17px; }
+  .outcome-card .card-kicker { font-size: 9px; }
+  .outcome-card h2 { font-size: 13px; }
+  .outcome-card p:not(.card-kicker) { font-size: 10px; }
+  .project-caption { font-size: 9px; }
+  .method-caveat p { font-size: 10px; }
+  .back-water-button { min-height: 40px; font-size: 11px; }
+  .about-dialog h2 { font-size: 24px; }
+  .about-dialog > p:not(.op-eyebrow) { font-size: 13px; }
+  .about-dialog > small { font-size: 10px; }
+}
+
 @media (max-width: 900px) {
   .op-header, .op-main { width: min(100% - 40px, 720px); }
   .op-header { width: 100%; padding: 0 max(20px, calc((100% - 720px) / 2)); grid-template-columns: 1fr auto; height: 62px; }
