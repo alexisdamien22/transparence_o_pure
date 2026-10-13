@@ -86,11 +86,4 @@
     <circle cx="9" cy="122" r="2.3" fill="#19B6D2"/>
     <circle cx="7" cy="128" r="1.4" fill="#19B6D2"/>
   </g>
-
-  <!-- Slogan éditable -->
-  <text x="102" y="177" text-anchor="middle"
-        font-family="Montserrat, Arial, sans-serif" font-size="11.4"
-        font-weight="400" letter-spacing="-0.25" fill="#22B8B7">
-    Mieux traiter. Mieux protéger.
-  </text>
 </svg>
